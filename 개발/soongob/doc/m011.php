@@ -1,0 +1,19 @@
+<?php
+$cate_num = 1;
+$page_num = 1;
+$cate_tit = '순곱이네 스토리';
+$page_tit = '순곱이네 스토리';
+include '../../../common.php';
+include_once(G5_THEME_PATH.'/head.php');
+?>
+
+<div class="con_wrap">
+    <h3>“한식의 무거움을 가볍게 하는 순곱이네”</h3>
+    <p>순곱이네는 20대 초반~ 30대, MZ세대를 중심으로 전 연령대가 쉬어가고 맛있는 음식을 향유할 수 있는 공간입니다.<br />
+        창업 위치는 MZ세대가 많이 찾는 역세권 및 먹자골목 지역이 좋으며, 전용면적 최소 20평 이상이 필요합니다.
+    </p>
+</div>
+
+<?php
+include_once(G5_THEME_PATH.'/tail.php');
+?>

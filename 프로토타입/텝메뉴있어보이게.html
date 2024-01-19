@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>순곱이네 따라만들기</title>
+
+
+    <link rel="stylesheet" href="./css/default.css">
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/fonts.css">
+    <link rel="stylesheet" href="./css/slick.css">
+    <link rel="stylesheet" href="./css/style.css">
+
+    <script src="./js/jquery-1.12.4.min.js"></script>
+    <script src="./js/slick.min.js"></script>
+    <script src="./js/custom.js"></script>
+
+    <style>
+        .tab_style01 {
+
+            margin: 100px 30px;
+
+            display: flex;
+            gap: 4px;
+
+            border-bottom: 1px solid tomato;
+        }
+
+        .tab_style01>* {
+            flex: 1 1 0;
+            border: 1px solid #ddd;
+            border-bottom: 1px solid transparent;
+            margin: 0 0 -1px 0;
+        }
+
+        .tab_style01>*.on {
+            border: 1px solid tomato;
+            border-bottom: 1px solid #fff;
+        }
+
+        .tab_style01 button {
+            all: unset;
+            width: 100%;
+            height: 50px;
+            padding: 0 24px;
+            cursor: pointer;
+        }
+    </style>
+
+</head>
+
+<body>
+    <ul class="tab_style01">
+        <li class="on"><button>TAB 01</button></li>
+        <li><button>TAB 02</button></li>
+        <li><button>TAB 03</button></li>
+    </ul>
+    <script>
+        $(function () {
+            $('.tab_style01 li').on('click', function () {
+                $(this).addClass('on').siblings().removeClass('on')
+            })
+        })
+    </script>
+</body>
+
+</html>
