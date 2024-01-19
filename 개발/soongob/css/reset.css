@@ -17,6 +17,7 @@ h5,
 h6 {
     font-size: inherit;
     font-weight: inherit;
+    white-space: nowrap;
 }
 
 strong,
@@ -55,15 +56,8 @@ button {
     cursor: pointer;
 }
 
-table {
-    border-collapse: collapse;
-    border-spacing: 0;
-    width: 100%;
-}
-
-table th {
-    font-weight: 400;
-    text-align: left;
+p {
+    word-break: keep-all;
 }
 
 .blind {

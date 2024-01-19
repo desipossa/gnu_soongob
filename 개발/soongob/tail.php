@@ -45,7 +45,7 @@ if(G5_COMMUNITY_USE === false) {
 
 
     <style>
-    /* board style */
+            /* board style */
 
     .__customer .latest ul li {
         border-bottom: 1px solid #f1f1f1;
