@@ -60,6 +60,11 @@ p {
     word-break: keep-all;
 }
 
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
 .blind {
     position: absolute;
     width: 1px;

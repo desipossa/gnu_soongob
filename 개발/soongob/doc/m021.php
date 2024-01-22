@@ -1,53 +1,56 @@
 <?php
 $cate_num = 2;
 $page_num = 1;
-$cate_tit = '깔끄미청소';
-$page_tit = '아파트입주청소';
+$cate_tit = '순곱이네 메뉴';
+$page_tit = '순곱이네 메뉴';
 include '../../../common.php';
 include_once(G5_THEME_PATH.'/head.php');
 ?>
 
-<? include G5_THEME_PATH.'/doc/content.head.php';?>
-
 <div class="con_wrap">
-    <h3>아파트입주청소</h3>
-    <p>
-    신축 아파트나 빌라 등 입주 전 상태에서의 실내 청소를 말하며<br/>
-    보양지 제거, 공사먼지 제거, 오염 제거, 시멘트가루 제거 등
-    구석구석 세밀하게 청소하는 서비스로 가족의 건강을 위해서 입주 전에 꼭 해야 하는 서비스입니다.
-    </p>
-
-    <hr>
-
-    <div class="img_wrap">
-        <figure>
-            <img src="../images/main_s011.jpg" alt="">
-        </figure>
-        <figure>
-            <img src="../images/main_s012.jpg" alt="">
-        </figure>
-        <figure>
-            <img src="../images/main_s013.jpg" alt="">
-        </figure>
+    <h3 class="blind">“한식의 무거움을 가볍게 하는 순곱이네”</h3>
+    <div class="menu_wrap">
+        <div class="itm">
+            <strong>순대곱창버섯전골 , 수제순대버섯전골</strong>
+            <figure>
+                <img src="../images/main_slider_n01.jpg" alt="">
+            </figure>
+            <p>
+            수제순대와 한우 곱창의 환상의 콤비.<br/>
+            얼큰한 국물 맛이 일품인 술안주, 전골의 진수를 완성하다.
+            </p>
+        </div>
+        <div class="itm">
+            <strong>순대곱창철판볶음</strong>
+            <figure>
+                <img src="../images/main_slider_n02.jpg" alt="">
+            </figure>
+            <p>
+            수매콤달짝 당면의 쫄깃한과 신선한 야채의 조화.<br/>
+            수제순대와 한우곱창이 어우러진 배포장만의 철판요리를 완성하다.
+            </p>
+        </div>
+        <div class="itm">
+            <strong>수제찜순대</strong>
+            <figure>
+                <img src="../images/main_slider_n04.jpg" alt="">
+            </figure>
+            <p>
+            수제순대의 진미와 담백한 편육 한 접시.<br/>
+            #맥주 안주에는 수제순대  #소주 안주에는 편육
+            </p>
+        </div>
+        <div class="itm">
+            <strong>편육 한접시</strong>
+            <figure>
+                <img src="../images/main_slider_n05.jpg" alt="">
+            </figure>
+            <p>
+            수제순대의 진미와 담백한 편육 한 접시.<br/>
+            #맥주 안주에는 수제순대   #소주 안주에는 편육
+            </p>
+        </div>
     </div>
-
-    <hr>
-
-    <h3>청소 서비스 내용</h3>
-
-    <ul class="default_list">
-        <li>쓰레기수거후 진공청소</li>
-        <li>베란다 샷시 및 유리창 청소 (건물바깥면 유리창은 제외)</li>
-        <li>베란다 바닥청소</li>
-        <li>찌든데, 먼지, 오염제거</li>
-        <li>실리콘 곰팡이, 거미줄, 스티거 제거 (추가적인 사항 비용발생) 실리콘 곰팡이, 거미줄, 스티거 제거 (추가적인 사항 비용발생)</li>
-        <li>싱크대 내/외부 및 다용도실, 화장실 청소</li>
-        <li>각방 바닥 및 거실바닥 청소</li>
-        <li>벽면 수작업으로 먼지 제거</li>
-        <li>현관 출입문 및 바닥, 신발장 청소</li>
-        <li>고객과 청소상태 확인</li>
-    </ul>
-
 </div>
 
 <?php
