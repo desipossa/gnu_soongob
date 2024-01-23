@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>순곱이네 따라만들기</title>
+
+
+    <link rel="stylesheet" href="./css/default.css">
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/fonts.css">
+    <link rel="stylesheet" href="./css/slick.css">
+    <link rel="stylesheet" href="./css/style.css">
+
+    <script src="./js/jquery-1.12.4.min.js"></script>
+    <script src="./js/slick.min.js"></script>
+    <script src="./js/custom.js"></script>
+
+    <style>
+        .card_wrap {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 400px;
+            height: 600px;
+            perspective: 1000px;
+        }
+
+        .card_wrap .in {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            left: 0;
+            top: 0;
+            /* 이 거 있어야 작동함. */
+
+            transform-style: preserve-3d;
+            transition: transform 1.5s;
+        }
+
+        .card_wrap .in>* {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            left: 0;
+            top: 0;
+            backface-visibility: hidden;
+            /* perspective: 600px; */
+            transform-style: preserve-3d;
+        }
+
+        .card_wrap .in h3 {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate3d(-50%, -50%, 100px);
+            color: #fff;
+            font-size: 30px;
+            font-weight: 900;
+            padding: 16px 24px;
+            background: rgba(0, 0, 0, 0.5);
+        }
+
+        .card_wrap figure {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            left: 0;
+            top: 0;
+        }
+
+        .card_wrap .front figure {
+            background: url(./images/main_slider_n01.jpg) center top/cover;
+        }
+
+        .card_wrap .front {
+            transform: rotateY(180deg);
+        }
+
+        .card_wrap .back figure {
+            background: url(./images/main_slider_n02.jpg) center top/cover;
+        }
+
+        .card_wrap:hover .in {
+            transform: rotateY(180deg);
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="card_wrap">
+        <div class="in">
+            <div class="front">
+                <figure></figure>
+                <h3>LOREM</h3>
+            </div>
+            <div class="back">
+                <figure></figure>
+                <h3>LOREM</h3>
+            </div>
+        </div>
+    </div>
+    <script>
+        $(function () {
+        })
+    </script>
+</body>
+
+</html>
