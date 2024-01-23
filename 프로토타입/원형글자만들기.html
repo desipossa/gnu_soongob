@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>순곱이네 따라만들기</title>
+
+
+    <link rel="stylesheet" href="./css/default.css">
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/fonts.css">
+    <link rel="stylesheet" href="./css/slick.css">
+    <link rel="stylesheet" href="./css/style.css">
+
+    <script src="./js/jquery-1.12.4.min.js"></script>
+    <script src="./js/slick.min.js"></script>
+    <script src="./js/custom.js"></script>
+
+    <style>
+        body {
+            height: 300vh;
+        }
+
+        .circleTxt {
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            width: 500px;
+            height: 500px;
+            transform: translate(-50%, -50%);
+            font-size: 40px;
+            font-weight: 900;
+            text-transform: uppercase;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="circleTxt">Lorem ipsum dolor sit amet consectetur.</div>
+    <script>
+        $(function () {
+            const CIRCLE = document.querySelector('.circleTxt');
+            const TXT = document.querySelector('.circleTxt').innerText;
+            CIRCLE.innerHTML = '';
+            const T = [...TXT].map((it, idx) => CIRCLE.innerHTML += `<span>${it}</span>`);
+            [...CIRCLE.children].forEach((it, idx, arry) => {
+                it.style.cssText = `
+                    position: absolute;
+                    top:0;
+                    left:50%;
+                    height: 100%;
+                    transform: translate(-50%,0) rotate(${360 / arry.length * idx}deg);
+                `
+            });
+
+            window.addEventListener('scroll', (e) => {
+                let S = window.scrollY;
+                CIRCLE.style.cssText = `
+                transform: translate(-50%, -50%) rotate(${S / 10}deg);
+                `
+            })
+
+
+        })
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>순곱이네 따라만들기</title>
+
+
+    <link rel="stylesheet" href="./css/default.css">
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/fonts.css">
+    <link rel="stylesheet" href="./css/slick.css">
+    <link rel="stylesheet" href="./css/style.css">
+
+    <script src="./js/jquery-1.12.4.min.js"></script>
+    <script src="./js/slick.min.js"></script>
+    <script src="./js/custom.js"></script>
+
+    <style>
+        body {
+            height: 300vh;
+        }
+
+        .circleTxt {
+            position: fixed;
+            top: 50%;
+            left: 50%;
+
+            transform: translate(-50%, -50%);
+
+            display: flex;
+            justify-content: center;
+
+            width: 1200px;
+            font-size: 40px;
+            font-weight: 900;
+            text-transform: uppercase;
+            animation: circleText 5s infinite linear;
+        }
+
+        @keyframes circleText {
+            from {
+                transform: translate(-50%, -50%) perspective(800px) rotateY(0deg);
+            }
+
+            to {
+                transform: translate(-50%, -50%) perspective(800px) rotateY(360deg);
+            }
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="circleTxt">Lorem ipsum dolor sit amet consectetur.</div>
+    <script>
+        $(function () {
+            const txt = $('.circleTxt').text().split('');
+            const ctxt = txt.map((it, idx) => `<span>${it}</span>`).join('');
+            const circle = $('.circleTxt').text('').append(ctxt).children();
+        })
+    </script>
+</body>
+
+</html>

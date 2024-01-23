@@ -8,7 +8,6 @@ include_once(G5_THEME_PATH.'/head.php');
 ?>
 
 <style>
-
     #sld .slide_test {
         position: relative;
         height: 400px;
